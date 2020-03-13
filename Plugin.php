@@ -140,7 +140,6 @@ class GitStatic_Plugin implements Typecho_Plugin_Interface
               },
               "content": "'.base64_encode($files).'"
             }';
- // $token="49e22b37f6795a9264909642c5afcc123cc4e2fb";
             $curl_url = "https://api.github.com/repos/".$username."/".$repos."/contents".$path;
             $curl_token_auth = 'Authorization: token ' . $token;
             $ch = curl_init($curl_url);
